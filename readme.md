@@ -47,4 +47,50 @@ app.listen( port, function(){
 ```
 - setup folder structure
 
-![serer folders](readmeImages/serverSetup.png)
+![server folders](readmeImages/serverSetup.png)
+
+- update HTML file
+- in server.js, add the following above the app.listen:
+
+```
+app.use( express.static( 'server/public' ) );
+```
+
+- you should now be able to lead the following url in the browser:
+
+![html working](reamdeImages/html.png)
+
+- add a console log to client.js file:
+```
+console.log( 'JS' );
+```
+- src in the client.js file
+```
+<script src="scripts/client.js"></script>
+```
+- reload the browser:
+![js working](reamdeImages/js.png)
+
+- move jquery into the server/vendors folder
+- src in html
+```
+<script src="vendors/jquery-3.2.1.min.js"></script>
+```
+- add a make sure it works with a tiny bit of JQ:
+```
+$( document ).ready( function(){
+    console.log( 'JQ' );
+});
+```
+- reload browser
+![jq working](reamdeImages/jq.png)
+
+- create a css file (nothing fancy) in server/styles
+- link in html
+```
+<link rel="stylesheet" href="styles/beach.css">
+```
+- reload browser
+
+![css linked](reamdeImages/css.png)
+
