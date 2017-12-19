@@ -58,7 +58,7 @@ app.use( express.static( 'server/public' ) );
 
 - you should now be able to lead the following url in the browser:
 
-![html working](reamdeImages/html.png)
+![html working](readmeImages/html.png)
 
 - add a console log to client.js file:
 ```
@@ -69,7 +69,7 @@ console.log( 'JS' );
 <script src="scripts/client.js"></script>
 ```
 - reload the browser:
-![js working](reamdeImages/js.png)
+![js working](readmeImages/js.png)
 
 - move jquery into the server/vendors folder
 - src in html
@@ -83,7 +83,7 @@ $( document ).ready( function(){
 });
 ```
 - reload browser
-![jq working](reamdeImages/jq.png)
+![jq working](readmeImages/jq.png)
 
 - create a css file (nothing fancy) in server/styles
 - link in html
@@ -92,5 +92,5 @@ $( document ).ready( function(){
 ```
 - reload browser
 
-![css linked](reamdeImages/css.png)
+![css linked](readmeImages/css.png)
 
