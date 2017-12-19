@@ -37,3 +37,14 @@ app.listen( port, function(){
 - use "ctrl+c" to stop the server
 - NOTE: client-side console logs show up in the browser, server-side console logs appear in the terminal
 
+- add "start" script to your package.json:
+
+```
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+```
+- setup folder structure
+
+![serer folders](readmeImages/serverSetup.png)
